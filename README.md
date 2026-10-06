@@ -6,6 +6,19 @@ This repo is my notes on how that website is hosted on AWS, plus a Terraform tem
 setup. The website's own code and photos are not in here. They belong to the business, which is a
 family member's trekking company in Kathmandu.
 
+Short on time? The part worth reading is Problem 3 (the lost Terraform state) in
+[docs/concepts-and-problems.md](docs/concepts-and-problems.md).
+
+## Architecture
+
+```mermaid
+flowchart LR
+    V([Visitor]) --> R53[Route 53<br/>DNS]
+    R53 --> CF[CloudFront<br/>CDN and HTTPS]
+    ACM[ACM<br/>certificate] -.-> CF
+    CF --> S3[(S3 bucket<br/>private)]
+```
+
 ## How it was built
 
 I used Claude, an AI assistant, to guide and debug this build and to learn as I went. I ran every
