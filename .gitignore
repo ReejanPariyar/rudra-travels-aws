@@ -1,8 +1,33 @@
-# Terraform: never commit state or real settings
+# --- macOS and editor leftovers ---
+.DS_Store
+.AppleDouble
+.Trashes
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# --- secrets: never commit these ---
+.env
+.env.*
+*.pem
+*.key
+*.p12
+.aws/
+credentials
+*credentials*.csv
+*accessKeys*.csv
+rootkey.csv
+
+# --- Terraform: local state and personal settings ---
+.terraform/
 *.tfstate
 *.tfstate.*
-.terraform/
-terraform.tfvars
 crash.log
-# macOS
-.DS_Store
+terraform.tfvars
+*.auto.tfvars
+
+# --- generated files and downloads ---
+node_modules/
+*.zip
+*.log
