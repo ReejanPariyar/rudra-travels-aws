@@ -1,0 +1,8 @@
+# Terraform: never commit state or real settings
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
+crash.log
+# macOS
+.DS_Store
