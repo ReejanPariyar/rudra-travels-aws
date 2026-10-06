@@ -8,10 +8,9 @@ family member's trekking company in Kathmandu.
 
 ## How it was built
 
-I built this with step-by-step help from Claude, an AI assistant. I ran the commands myself and
-checked what they did. The guides in `docs/` were drafted by Claude from what we did together, and
-I'm going back through them to understand each part. I can follow the steps already, but I can't
-yet explain every concept without notes. The last section says which ones.
+I used Claude, an AI assistant, to guide and debug this build and to learn as I went. I ran every
+command myself. The guides in `docs/` were written with Claude's help. There's a list at the end of
+what I'm still working through.
 
 ## How the hosting works
 
