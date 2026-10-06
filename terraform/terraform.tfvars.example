@@ -1,0 +1,6 @@
+# Copy this file to terraform.tfvars and fill in your real domain.
+# terraform.tfvars is where your actual settings live — never commit it
+# to a public repo.
+
+domain_name = "example.com"
+aws_region  = "eu-west-2"
